@@ -5,10 +5,12 @@ Use by adding a pwned.txt file full of emails you want to check.
 
 Note: replace lines 6 and 8 with the following to run Chrome headless. You'll need to make sure your chromedriver is up to date:
 
-# Run Chrome headless
+## Run Chrome headless
 chrome_options = Options()
 chrome_options.add_argument("--headless")
 driver = webdriver.Chrome(options=chrome_options)
+
+## Use API
 
 Note: You can also check emails directy from the API by using the cloudscraper module to bypass cloudflare protections:
 
