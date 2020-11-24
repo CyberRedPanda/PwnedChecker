@@ -26,6 +26,6 @@ with open("pwned.txt") as f:
 			print(str(line) + " PWNED!" )
 		driver.get("https://haveibeenpwned.com/")		
 
-
+driver.quit()
 
 
