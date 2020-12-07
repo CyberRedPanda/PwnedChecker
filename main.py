@@ -22,8 +22,10 @@ with open("pwned.txt") as f:
 		response = driver.find_element_by_class_name("pwnTitle").text
 		if "Good news — no pwnage found!" in response:
 			print(str(line) + " CLEAN!" )
-		else:
+		elif "Oh no — pwned!":
 			print(str(line) + " PWNED!" )
+		else:
+			print("Error: please run manually")
 		driver.get("https://haveibeenpwned.com/")		
 
 driver.quit()
